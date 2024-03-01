@@ -13,7 +13,3 @@ TWEAK_NAME = VisibleIsland
 
 VisibleIsland_FILES = Tweak.xm 
 VisibleIsland_CFLAGS = -fobjc-arc
-
-include $(THEOS_MAKE_PATH)/tweak.mk
-SUBPROJECTS += visibleislandprefs
-include $(THEOS_MAKE_PATH)/aggregate.mk
