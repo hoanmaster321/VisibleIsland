@@ -10,7 +10,7 @@ INSTALL_TARGET_PROCESSES = backboardd aggregated
 
 ARCHS = arm64 arm64e
 
-include $(THEOS_MAKE_PATH)/makefiles/common.mk
+include $(THEOS)/makefiles/common.mk
 
 TWEAK_NAME = VisibleIsland
 
