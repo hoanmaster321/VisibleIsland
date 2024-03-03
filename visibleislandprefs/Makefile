@@ -10,8 +10,6 @@ include $(THEOS)/makefiles/common.mk
 
 BUNDLE_NAME = VisibleIslandPrefs
 
-ARCHS = arm64
-
 VisibleIslandPrefs_FILES = VISRootListController.m CLRRootListController.m NOTRootListController.m SCLRootListController.m
 VisibleIslandPrefs_FRAMEWORKS = UIKit
 VisibleIslandPrefs_PRIVATE_FRAMEWORKS = Preferences
