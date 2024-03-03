@@ -32,9 +32,6 @@ jobs:
           sparse-checkout: iPhoneOS15.6.sdk
           path: theos/sdks
 
-      - name: Install dependencies
-        run: brew install make xz ldid
-
       - name: Build package (rootless)
         run: THEOS=theos gmake clean package FINALPACKAGE=1 THEOS_PACKAGE_SCHEME=rootless
 
