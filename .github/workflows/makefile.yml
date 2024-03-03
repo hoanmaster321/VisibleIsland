@@ -12,7 +12,7 @@ jobs:
     steps:
       - uses: maxim-lobanov/setup-xcode@v1
         with:
-          xcode-version: '15.0'
+          xcode-version: '15.2'
             
       - uses: actions/checkout@main
 
@@ -23,7 +23,10 @@ jobs:
           ref: master
           submodules: recursive
           path: theos
-
+          
+      - name: Install dependencies
+        run: brew install make
+        
       - name: Checkout SDKs
         uses: actions/checkout@main
         with:
